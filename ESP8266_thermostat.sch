@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ESP8266_thermostat-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -87,7 +88,7 @@ F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 6550 3000 50  0001
 $EndComp
 Text Label 5900 3000 2    50   ~ 0
 DHT11
-Text Label 7000 2750 2    50   ~ 0
+Text Label 7100 2750 0    50   ~ 0
 DHT11
 $Comp
 L power:+3V3 #PWR02
@@ -116,17 +117,13 @@ Wire Wire Line
 Wire Wire Line
 	6300 2400 6300 2450
 Wire Wire Line
-	6700 2750 7000 2750
-Wire Wire Line
 	5600 3000 5900 3000
-Text Label 3500 2950 0    50   ~ 0
+Text Label 3400 2950 0    50   ~ 0
 IR
 Text Label 4450 3000 0    50   ~ 0
 IR
 Wire Wire Line
 	4450 3000 4600 3000
-Wire Wire Line
-	3500 2950 3600 2950
 NoConn ~ 5600 2700
 NoConn ~ 5600 2800
 NoConn ~ 5600 2900
@@ -165,7 +162,7 @@ L Device:R_US R1
 U 1 1 5D4BBA87
 P 3900 3350
 F 0 "R1" H 3968 3396 50  0000 L CNN
-F 1 "R_US" H 3968 3305 50  0000 L CNN
+F 1 "47" H 3968 3305 50  0000 L CNN
 F 2 "" V 3940 3340 50  0001 C CNN
 F 3 "~" H 3900 3350 50  0001 C CNN
 	1    3900 3350
@@ -190,4 +187,21 @@ Wire Wire Line
 	3900 2750 3900 2700
 Wire Wire Line
 	3900 2400 3900 2350
+$Comp
+L Device:R_US R2
+U 1 1 5D4CC165
+P 6900 2750
+F 0 "R2" H 6968 2796 50  0000 L CNN
+F 1 "10K" H 6968 2705 50  0000 L CNN
+F 2 "" V 6940 2740 50  0001 C CNN
+F 3 "~" H 6900 2750 50  0001 C CNN
+	1    6900 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 2750 7050 2750
+Wire Wire Line
+	6750 2750 6700 2750
+Wire Wire Line
+	3400 2950 3600 2950
 $EndSCHEMATC
