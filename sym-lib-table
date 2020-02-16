@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name ESP8266_thermostat-rescue)(type Legacy)(uri ${KIPRJMOD}/ESP8266_thermostat-rescue.lib)(options "")(descr ""))
 )

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ESP8266_thermostat-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L wemos_mini:WeMos_mini U2
+L ESP8266_thermostat-rescue:WeMos_mini-wemos_mini U2
 U 1 1 5D4BA14C
 P 5100 2950
 F 0 "U2" H 5100 3587 60  0000 C CNN
@@ -76,7 +76,7 @@ $EndComp
 Wire Wire Line
 	5800 2600 5600 2600
 $Comp
-L Sensor:DHT11 U1
+L ESP8266_thermostat-rescue:DHT11-Sensor U1
 U 1 1 5D4BA646
 P 6400 2750
 F 0 "U1" H 6170 2796 50  0000 R CNN
@@ -136,7 +136,7 @@ NoConn ~ 4600 3100
 NoConn ~ 4600 3200
 NoConn ~ 4600 3300
 $Comp
-L Transistor_BJT_2:2N2219 Q1
+L ESP8266_thermostat-rescue:2N2219-Transistor_BJT_2 Q1
 U 1 1 5D4BB904
 P 3800 2950
 F 0 "Q1" H 3991 2996 50  0000 L CNN
